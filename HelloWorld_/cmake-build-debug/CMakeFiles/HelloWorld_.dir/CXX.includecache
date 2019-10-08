@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+H:/games_tech_year_1/ESD/Projects/ESD/HelloWorld_/main.cpp
+cstdlib
+-
+iostream
+-
+ctime
+-
+
