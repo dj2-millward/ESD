@@ -8,37 +8,117 @@ int main() {
 
     std::srand(time(NULL));
 
-    int rand_number = rand() % 10 + 1;
     int user_input;
-    int guess_count = 0;
-    int limit = 5;
-    bool is_running = false;
+    bool is_running_guess = true;
+    bool is_running_rps = true;
+    bool invalid_menu = true;
 
-    std::cout << "Hello and welcome to THE GUESSING GAME! " << std::endl;
-    _sleep(1500);
-    while (user_input != rand_number && !is_running) {
-        if (guess_count < limit) {
-            std::cout << "Enter a number between 1 and 10: ";
-            std::cin >> user_input;
-            guess_count++;
+    std::string menu_reply;
+    std::string reply;
 
-            if (user_input < rand_number) {
-                std::cout << "Higher" << std::endl;
-            }
-            else if (user_input > rand_number) {
-                std::cout << "Lower" << std::endl;
-            }
-            else {
-                std::cout << "Well done! The number was indeed " << rand_number << std::endl;
-            }
 
-        } else {
-            is_running = true;
-            std::cout <<"You Lose, the answer was: " << rand_number << "" << std::endl;
-        }
+
+    while (invalid_menu){
+        std::cout << "Hello, welcome to console games. Press G to play Guess the number and press R to play Rock Paper Scissors" << std::endl;
+        std::cin >> menu_reply;
+
+        if (menu_reply == "G") {
+            is_running_guess = true;
+    }
+    else if (menu_reply == "R"){
+        is_running_rps = true;
 
     }
-}
+    else if ()
+    if (menu_reply != "G" && "R")
+        invalid_menu = false;
+
+    }
+
+
+
+    while (is_running_guess) {
+        int rand_number = rand() % 10 + 1;
+        std::cout << "Hello and welcome to THE GUESSING GAME! " << std::endl;
+        for (int guess_count = 0; guess_count < 5; guess_count++) {
+
+            std::cout << "Enter a number: ";
+            std::cin >> user_input;
+
+            if (user_input == rand_number) {
+                std::cout << "Well done! The number was indeed " << rand_number << std::endl;
+                is_running_guess = false;
+                break;
+            }
+
+            if (user_input > rand_number) {
+                std::cout << "Lower" << std::endl;
+            } else if (user_input < rand_number) {
+                std::cout << "Higher" << std::endl;
+            }
+
+            if (guess_count == 4) {
+                std::cout << "you lose!" << std::endl;
+            }
+        }
+        std::cout << "Would you like to play again, Y for Yes - N for No ";
+        std::cin >> reply;
+
+        if (reply == "Y"){
+            is_running_guess= true;
+        }
+        else if (reply == "N"){
+            break;
+        }
+
+
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /* else if (user_input == rand_number) {
+                std::cout << "Well done! The number was indeed " << rand_number << std::endl;
+                is_running = false; /*/
+
+
+        //else {
+          //  is_running = true;
+           // std::cout <<"You Lose, the answer was: " << rand_number << "" << std::endl;
+
+
+
+
 
 
 
