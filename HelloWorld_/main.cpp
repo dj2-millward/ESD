@@ -11,6 +11,7 @@ int main() {
     int user_input;
     bool is_running_guess = true;
     bool is_running_rps = true;
+    bool game_menu = true;
     bool invalid_menu = true;
     bool invalid_playagain = true;
 
@@ -22,21 +23,26 @@ int main() {
 
 
 
-    while (invalid_menu) { //   Main Menu
-        std::cout
-                << "Hello, welcome to console games. Press G to play Guess the number and press R to play Rock Paper Scissors"
-                << std::endl;
-        std::cin >> menu_reply;
+    while (game_menu) { //   Main Menu
+        while (invalid_menu){
+            std::cout
+                    << "Hello, welcome to console games. Press G to play Guess the number and press R to play Rock Paper Scissors"
+                    << std::endl;
+            std::cin >> menu_reply;
 
-        if (menu_reply == "G") {
-            is_running_guess = true;
-            invalid_menu = false;
-        } else if (menu_reply == "R") {
-            is_running_rps = true;
+            if (menu_reply == "G") {
+                is_running_guess = true;
+                invalid_menu = false;
+            } else if (menu_reply == "R") {
+                is_running_rps = true;
+            }
+            else {
+                std::cout << "invalid reply\n";
+
+
+            }
         }
-        if (menu_reply != "G") {
-            std::cout << "invalid reply\n";
-        }
+
 
 
         while (is_running_guess) {
@@ -78,7 +84,7 @@ int main() {
                 }
 
                 else if (playagain_input == "T") {
-                    invalid_menu = true;
+                    game_menu = true;
                 }
                 else {
                     std::cout << "invalid reply - Please enter Y or N or T \n";
