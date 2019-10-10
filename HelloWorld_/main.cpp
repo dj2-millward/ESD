@@ -12,8 +12,8 @@ int main() {
     bool is_running_guess = true;
     bool is_running_rps = true;
     bool game_menu = true;
-    bool invalid_menu = true;
-    bool invalid_playagain = true;
+    bool menu = true;
+    bool playagain = true;
 
 
     std::string menu_reply;
@@ -24,7 +24,7 @@ int main() {
 
 
     while (game_menu) { //   Main Menu
-        while (invalid_menu){
+        while (menu){
             std::cout
                     << "Hello, welcome to console games. Press G to play Guess the number and press R to play Rock Paper Scissors"
                     << std::endl;
@@ -32,7 +32,7 @@ int main() {
 
             if (menu_reply == "G") {
                 is_running_guess = true;
-                invalid_menu = false;
+                menu = false;
             } else if (menu_reply == "R") {
                 is_running_rps = true;
             }
@@ -41,7 +41,7 @@ int main() {
 
 
             }
-        }
+
 
 
 
@@ -56,6 +56,7 @@ int main() {
                 if (user_input == rand_number) {
                     std::cout << "Well done! The number was indeed " << rand_number << std::endl;
                     is_running_guess = false;
+                    playagain = true;
                     break;
                 }
 
@@ -66,34 +67,44 @@ int main() {
                 }
 
                 if (guess_count == 4) {
-                    std::cout << "you lose!" << std::endl;
+                    std::cout << "Out of guesses, you lose!" << std::endl;
+                    menu = true;
+                    is_running_guess = false;
+                    playagain = true;
+
+
                 }
             }
 
-            while (invalid_playagain) {
+            while (playagain) {
                 std::cout
                         << "Would you like to play again, - Y for Yes - N for No - T for Top menu - " << std::endl;
                 std::cin >> playagain_input;
 
                 if (playagain_input == "Y") {
                     is_running_guess = true;
-                    invalid_playagain = false;
+                    playagain = false;
                 } else if (playagain_input == "N") {
-                    invalid_playagain = true;
+                    playagain = false;
+                    is_running_guess = false;
+                    menu = false;
                     break;
-                }
+                } else if (playagain_input == "T") {
+                    menu = true;
+                    playagain = false;
+                    is_running_guess = false;
 
-                else if (playagain_input == "T") {
-                    game_menu = true;
-                }
-                else {
-                    std::cout << "invalid reply - Please enter Y or N or T \n";
+                } else {
+                    std::cout << "Invalid Reply \n";
                 }
             }
-
-
         }
+
+
+        } return 0;
+
     }
+
 }
 
 
