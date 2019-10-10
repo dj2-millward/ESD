@@ -21,8 +21,6 @@ int main() {
     std::string playagain_input;
 
 
-
-
     while (game_menu) { //   Main Menu
         while (menu){
             std::cout
@@ -38,7 +36,7 @@ int main() {
             }
             else {
                 std::cout << "invalid reply\n";
-
+                is_running_guess = false;
 
             }
 
