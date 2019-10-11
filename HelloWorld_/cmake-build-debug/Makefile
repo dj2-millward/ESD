@@ -122,33 +122,6 @@ HelloWorld_/fast:
 	$(MAKE) -f CMakeFiles\HelloWorld_.dir\build.make CMakeFiles/HelloWorld_.dir/build
 .PHONY : HelloWorld_/fast
 
-RPS.obj: RPS.cpp.obj
-
-.PHONY : RPS.obj
-
-# target to build an object file
-RPS.cpp.obj:
-	$(MAKE) -f CMakeFiles\HelloWorld_.dir\build.make CMakeFiles/HelloWorld_.dir/RPS.cpp.obj
-.PHONY : RPS.cpp.obj
-
-RPS.i: RPS.cpp.i
-
-.PHONY : RPS.i
-
-# target to preprocess a source file
-RPS.cpp.i:
-	$(MAKE) -f CMakeFiles\HelloWorld_.dir\build.make CMakeFiles/HelloWorld_.dir/RPS.cpp.i
-.PHONY : RPS.cpp.i
-
-RPS.s: RPS.cpp.s
-
-.PHONY : RPS.s
-
-# target to generate assembly for a file
-RPS.cpp.s:
-	$(MAKE) -f CMakeFiles\HelloWorld_.dir\build.make CMakeFiles/HelloWorld_.dir/RPS.cpp.s
-.PHONY : RPS.cpp.s
-
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -185,9 +158,6 @@ help:
 	@echo ... HelloWorld_
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... RPS.obj
-	@echo ... RPS.i
-	@echo ... RPS.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

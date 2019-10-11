@@ -6,9 +6,13 @@
 
 #IncludeRegexTransform: 
 
-H:/games_tech_year_1/ESD/Projects/ESD/HelloWorld_/RPS.cpp
-fstream
--
+H:/games_tech_year_1/ESD/Projects/ESD/HelloWorld_/main.cpp
 iostream
+-
+time.h
+-
+stdlib.h
+-
+fstream
 -
 

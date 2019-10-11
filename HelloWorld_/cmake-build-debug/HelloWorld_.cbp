@@ -80,9 +80,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="H:/games_tech_year_1/ESD/Projects/ESD/HelloWorld_/RPS.cpp">
-			<Option target="HelloWorld_"/>
-		</Unit>
 		<Unit filename="H:/games_tech_year_1/ESD/Projects/ESD/HelloWorld_/main.cpp">
 			<Option target="HelloWorld_"/>
 		</Unit>
