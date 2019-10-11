@@ -35,12 +35,10 @@ int main() {
                 is_running_rps = true;
             }
             else {
-                std::cout << "invalid reply\n";
+                std::cout << "Invalid reply\n";
                 is_running_guess = false;
 
             }
-
-
 
 
         while (is_running_guess) {

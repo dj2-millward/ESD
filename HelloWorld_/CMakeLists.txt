@@ -3,4 +3,4 @@ project(HelloWorld_)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(HelloWorld_ main.cpp)
+add_executable(HelloWorld_ main.cpp RPS.cpp)
