@@ -58,7 +58,7 @@ while (main_menu) {
             return 0;
 
         default:
-            std::cout << "Invalid Input";
+            std::cout << "Invalid Input" << std::endl;
     }
     while (is_running_guess) { // Guessing Game
         main_menu = false;
@@ -117,7 +117,7 @@ while (main_menu) {
                     break;
 
                 default:
-                    std::cout << "Invalid Input, try again";
+                    std::cout << "Invalid Input, try again" << std::endl;
             }
         }
     }
@@ -132,19 +132,18 @@ while (main_menu) {
                         std::cout << "Error Reading File;" << std::endl;
                     }
                     int RPS_input = 0;
-                    int com_input;
+                int com_input = 0;
 
-                    bool GG = true;
-
-
-
+// Changing RPS to 1,2,3
                     inFile >> com_input;
+                    std::cin >> com_input;
+
                     if (com_input == __isascii(82)) { //R
                         com_input = 1;
                     }
-                    else if (com_input = __isascii(80)) { //P
+                    else if (com_input == __isascii(80)) { //P
                         com_input = 2;
-                    } else if (com_input = __isascii(83)) { //S
+                    } else if (com_input == __isascii(83)) { //S
                         com_input = 3;
                     }
 
@@ -152,7 +151,7 @@ while (main_menu) {
                     std::string PAPER = "PAPER - 2 \n";
                     std::string SCISSORS = "SCISSORS - 3 \n";
 
-                    std::cout << "Hello and welcome to ROCK PAPER SCISSORS, please select 1, 2 or 3!" << std::endl;
+                std::cout << "Hello and welcome to ROCK PAPER SCISSORS, please select 1, 2 or 3!" << std::endl;
 
                     std::cout << ROCK;
                     std::cout << PAPER;
@@ -177,33 +176,38 @@ while (main_menu) {
                             break;
                                                 }
 
-    std::cout << "Computer Selected: ";
-    switch (com_input) {
-        case 1 :
-            std::cout << ROCK;
-            break;
-        case 2 :
-            std::cout << PAPER;
-            break;
-        case 3 :
-            std::cout << SCISSORS;
-            break;
-        default :
-            std::cout << "Invalid Input\n";
+            std::cout << "Computer Selected: ";
+                    switch (com_input) {
+                         case 1 :
+                            std::cout << ROCK;
+                            break;
+                        case 2 :
+                            std::cout << PAPER;
+                            break;
+                        case 3 :
+                            std::cout << SCISSORS;
+                            break;
+                        default :
+                            std::cout << "Invalid Input\n";
 
     }
     if (RPS_input == com_input) {
         std::cout << "- Draw - " << std::endl;
 
+
     } else if (RPS_input == 2 && com_input == 1) {
+
         std::cout << "User Wins!" << std::endl;
 
     } else if (RPS_input == 3 && com_input == 2) {
+
         std::cout << "User Wins!" << std::endl;
     } else if (RPS_input == 1 && com_input == 3) {
         std::cout << "User Wins!" << std::endl;
+
     } else {
         std::cout << "Computer Wins! ";
+
 
     }
                 }
