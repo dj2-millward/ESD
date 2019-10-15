@@ -3,7 +3,6 @@
 #include <stdlib.h>
 #include <fstream>
 
-
 void guessing_game() {
     std::srand(time(NULL));
     bool guess_game = true;
@@ -200,48 +199,3 @@ int main() {
             std::cout << "Invalid Input" << std::endl;
     }
 }
-
-
-
-
-
-
-/*
-            //play again - GUESSING GAME
-            std::string yes = "1 - Yes\n";
-            std::string no = "2 - No, Exit game.\n";
-            std::string menu = "3 - Return to Menu\n";
-            int play_again_choice;
-
-            std::cout
-                    << "Would you like to play again?"
-                    << std::endl;
-
-
-            std::cout << yes;
-            std::cout << no;
-            std::cout << menu;
-
-            std::cin >> play_again_choice;
-
-            switch (play_again_choice) {
-                case 1 :
-                    //"YES";
-                    is_running_guess = true;
-                    is_running_rps = true;
-                    break;
-
-                case 2 :
-                    // "NO";
-                    return 0;
-
-                case 3 :
-                    //"MENU";
-                    main_menu = true;
-                    break;
-
-                default:
-                    std::cout << "Invalid Input, try again" << std::endl;
-                    break;
-            }
-/*/
