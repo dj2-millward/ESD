@@ -76,7 +76,6 @@ void rps_running() {
     char com_guess;
     int game_count;
 
-
     int comp_score = 0;
     int user_score = 0;
 
