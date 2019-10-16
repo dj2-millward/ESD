@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <fstream>
 
+
 void guessing_game() {
     std::srand(time(NULL));
     bool guess_game = true;
@@ -64,15 +65,46 @@ void guessing_game() {
     }
 }
 
+char user_input() {
+    char user_guess;
+    bool input_correct = true;
+
+    std::cout << "Hello and welcome to ROCK PAPER SCISSORS, Best of 5 games" << std::endl;
+    while (input_correct) {
+
+        std::cout << "R - Rock" << std::endl;
+        std::cout << "P - Paper" << std::endl;
+        std::cout << "S - Scissors" << std::endl;
+        std::cin >> user_guess;
+
+
+        if (user_guess == 'R') {
+            break;
+        } else if (user_guess == 'P') {
+                break;
+        } else if (user_guess == 'S') {
+            break;
+
+        } else {
+            std::cout << "Invalid Input, Please try again: " << std::endl;
+        }
+    }
+
+    return user_guess;
+
+
+}
+
 void rps_running() {
     bool rps_playagain = true;
+
     std::ifstream inFile("H:\\games_tech_year_1\\ESD\\Projects\\ESD\\HelloWorld_\\RPS.txt"); // opens file
     if (inFile.is_open()) {
     } else {
         std::cout << "Error reading file" << std::endl;
     }
 
-    char user_guess;
+
     char com_guess;
     int game_count;
 
@@ -80,11 +112,9 @@ void rps_running() {
     int user_score = 0;
 
     inFile >> com_guess;
-    std::cout << "Hello and welcome to ROCK PAPER SCISSORS, Best of 5 games" << std::endl;
-    std::cout << "R - Rock" << std::endl;
-    std::cout << "P - Paper" << std::endl;
-    std::cout << "S - Scissors" << std::endl;
-    std::cin >> user_guess;
+
+    char user_guess = user_input();
+
     while (rps_playagain) {
         for (int game_count = 0; game_count < 5; game_count++) {
 
@@ -96,20 +126,25 @@ void rps_running() {
                 user_score++;
                 inFile >> com_guess;
                 std::cin >> user_guess;
+
+
             } else if (user_guess == com_guess) {
                 std::cout << "You Chose: " << user_guess << std::endl << "Computer Chose:" << com_guess
                           << std::endl;
                 std::cout << "Draw, Enter another guess; " << std::endl;
                 inFile >> com_guess;
                 std::cin >> user_guess;
-            } else {
+            }
+            else
+                {
                 std::cout << "You Chose: " << user_guess << std::endl << "Computer Chose: " << com_guess
                           << std::endl;
                 std::cout << "You Lose, Enter another guess; " << std::endl;
                 comp_score++;
                 inFile >> com_guess;
                 std::cin >> user_guess;
-            }
+                }
+
             if (game_count == 4) {
                 std::cout << "Game Over, Here are the scores:" << std::endl;
                 std::cout << "_______________________________" << std::endl;
@@ -158,6 +193,7 @@ void rps_running() {
     }
 }
 
+
 int main() {
 
 //MAIN MENU
@@ -169,6 +205,7 @@ int main() {
     std::string gg = "1 - Guessing Game\n";
     std::string rps = "2 - Rock Paper Scissors\n";
     std::string exit = "3 - Exit\n";
+
     int menu_choice;
     std::cout
             << "Hello, welcome to console games. Please enter the number for the game you would like to play."
