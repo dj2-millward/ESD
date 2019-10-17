@@ -67,9 +67,13 @@ void guessing_game() {
     }
 }
 
-char user_input() {
+
+
+
+char user_input (){
     char user_guess;
     bool input_correct = true;
+    bool no_play = true;
 
 
     while (input_correct) {
@@ -78,6 +82,7 @@ char user_input() {
         std::cout << "P - Paper" << std::endl;
         std::cout << "S - Scissors" << std::endl;
         std::cin >> user_guess;
+        user_guess = toupper(user_guess);
 
 
         if (user_guess == 'R') {
@@ -104,20 +109,20 @@ int scoring(char com_guess, char user_guess)
             (user_guess == 'P' && com_guess == 'R')) {
             std::cout << "You Chose: " << user_guess << std::endl << "Computer Chose: " << com_guess
                       << std::endl;
-            std::cout << "User Wins! Enter another: " << std::endl;
+            //std::cout << "User Wins! Enter another: " << std::endl;
             std::cout << "_______________________________" << std::endl;
             return 1;
 
         } else if (user_guess == com_guess) {
             std::cout << "You Chose: " << user_guess << std::endl << "Computer Chose:" << com_guess
                       << std::endl;
-            std::cout << "You Draw! Enter another:  " << std::endl;
+           // std::cout << "You Draw! Enter another:  " << std::endl;
             std::cout << "_______________________________" << std::endl;
             return 0;
         } else {
             std::cout << "You Chose: " << user_guess << std::endl << "Computer Chose: " << com_guess
                       << std::endl;
-            std::cout << "You lose, unlucky! Enter another:  " << std::endl;
+          //  std::cout << "You lose, unlucky! Enter another:  " << std::endl;
             std::cout << "_______________________________" << std::endl;
             return -1;
         }
@@ -127,6 +132,8 @@ int scoring(char com_guess, char user_guess)
 
 int main() {
 //MAIN MENU
+bool rps_playagain = false;
+
     std::string menu_reply;
     std::string reply;
     std::string playagain_input;
@@ -141,7 +148,6 @@ int main() {
             << "Hello, welcome to console games. Please enter the number for the game you would like to play."
             << std::endl;
 
-
     std::cout << gg;
     std::cout << rps;
     std::cout << exit;
@@ -154,7 +160,7 @@ int main() {
             break;
 
         case 2 :
-
+            rps_playagain = true;
             break;
 
         case 3 :
@@ -164,10 +170,10 @@ int main() {
         default:
             std::cout << "Invalid Input" << std::endl;
     }
-    bool rps_playagain = false;
 
 
-    std::ifstream inFile("H:\\games_tech_year_1\\ESD\\Projects\\ESD\\HelloWorld_\\RPS.txt"); // opens file
+
+    std::ifstream inFile("RPS.txt"); // opens file
     if (inFile.is_open()) {
     } else {
         std::cout << "Error reading file" << std::endl;
@@ -180,89 +186,90 @@ int main() {
     int comp_score = 0;
     int user_score = 0;
 
-  ;
-    rps_playagain = true;
+
     std::cout << "_______________________________" << std::endl;
     std::cout << "Hello and welcome to ROCK PAPER SCISSORS, Best of 5 games" << std::endl;
 
-        while (rps_playagain) {
-            for (int game_count = 0; game_count < 5; game_count++) {
-                char user_guess = user_input();
-                inFile >> com_guess;
 
-                int score = scoring(com_guess, user_guess);
+    while (rps_playagain) {
+        for (int game_count = 0; game_count < 5; game_count++) {
+            char user_guess = user_input();
+            inFile >> com_guess;
 
-
-                if (score == 0) {
-                    //std::cout << "You Lose, Enter another guess; " << std::endl;
-
-                } else if (score == 1) {
-                    //std::cout << "You Win, Enter another guess;" << std::endl;
-                    user_score++;
+            int score = scoring(com_guess, user_guess);
 
 
-                } else if (score == -1) {
-                    //std::cout << "You Lose, " << std::endl;
-                    comp_score++;
+            if (score == 0) {
+                std::cout << "You Draw, Enter another guess; " << std::endl;
+
+            } else if (score == 1) {
+                std::cout << "You Win, Enter another guess;" << std::endl;
+                user_score++;
+
+
+            } else if (score == -1) {
+                std::cout << "You Lose, Enter another guess; " << std::endl;
+                comp_score++;
+
+            } else {
+                std::cout << "No score";
+            }
+
+            if (game_count == 4) {
+                std::cout << "Game Over, Here are the scores:" << std::endl;
+                std::cout << "_______________________________" << std::endl;
+                std::cout << "User: " << user_score << std::endl;
+                std::cout << "Computer: " << comp_score << std::endl;
+
+
+                if (user_score > comp_score) {
+                    std::cout << "You Win, GG " << std::endl;
+                    std::cout << "_______________________________" << std::endl;
+                    rps_playagain = false;
+
 
                 } else {
-                    std::cout << "No score";
-                }
-
-                if (game_count == 4) {
-                    std::cout << "Game Over, Here are the scores:" << std::endl;
+                    std::cout << "You Lose, GG" << std::endl;
                     std::cout << "_______________________________" << std::endl;
-                    std::cout << "User: " << user_score << std::endl;
-                    std::cout << "Computer: " << comp_score << std::endl;
-
-
-                    if (user_score > comp_score) {
-                        std::cout << "You Win, GG " << std::endl;
-                        std::cout << "_______________________________" << std::endl;
-
-
-                    } else {
-                        std::cout << "You Lose, GG" << std::endl;
-                        std::cout << "_______________________________" << std::endl;
-
-
-                    }
-                }
-
-            }
-            std::string yes = "1 - Yes\n";
-            std::string no = "2 - No, Exit game.\n";
-
-            int play_again_choice;
-
-            std::cout
-                    << "Would you like to play again?"
-                    << std::endl;
-
-            std::cout << yes;
-            std::cout << no;
-
-
-            std::cin >> play_again_choice;
-
-            switch (play_again_choice) {
-                case 1 :
-                    std::cout << "_______________________________" << std::endl;
-                    std::cout << "Hello and welcome to ROCK PAPER SCISSORS, Best of 5 games" << std::endl;
-                    rps_playagain = true;
-
-                    break;
-                case 2 :
-                    std::cout << "Thank you for playing" << std::endl;
                     rps_playagain = false;
-                    break;
-                default:
-                    std::cout << "Invalid Input, try again" << std::endl;
-                    break;
+
+                }
             }
 
         }
+        std::string yes = "1 - Yes\n";
+        std::string no = "2 - No, Exit game.\n";
+
+
+        int play_again_choice;
+
+
+        std::cout
+                << "Would you like to play again?"
+                << std::endl;
+
+        std::cout << yes;
+        std::cout << no;
+
+
+        std::cin >> play_again_choice;
+
+        switch (play_again_choice) {
+            case 1 :
+                std::cout << "_______________________________" << std::endl;
+                std::cout << "Hello and welcome to ROCK PAPER SCISSORS, Best of 5 games" << std::endl;
+                rps_playagain = true;
+
+                break;
+            case 2 :
+                std::cout << "Thank you for playing" << std::endl;
+                rps_playagain = false;
+
+            default:
+                std::cout << "Invalid Input, try again" << std::endl;
+                break;
+        }
     }
-
-
+return 0;
+        }
 

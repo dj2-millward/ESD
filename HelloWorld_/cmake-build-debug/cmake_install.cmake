@@ -1,4 +1,4 @@
-# Install script for directory: H:/games_tech_year_1/ESD/Projects/ESD/HelloWorld_
+# Install script for directory: C:/Users/Dan/Documents/ESD/ESD/HelloWorld_
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "H:/games_tech_year_1/ESD/Projects/ESD/HelloWorld_/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Dan/Documents/ESD/ESD/HelloWorld_/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
