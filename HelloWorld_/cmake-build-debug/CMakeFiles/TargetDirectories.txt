@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 C:/Users/Dan/Documents/ESD/ESD/HelloWorld_/cmake-build-debug/CMakeFiles/HelloWorld_.dir
 C:/Users/Dan/Documents/ESD/ESD/HelloWorld_/cmake-build-debug/CMakeFiles/edit_cache.dir
+=======
+C:/Users/Dan/Documents/ESD/ESD/HelloWorld_/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Dan/Documents/ESD/ESD/HelloWorld_/cmake-build-debug/CMakeFiles/untitled.dir
+>>>>>>> master
 C:/Users/Dan/Documents/ESD/ESD/HelloWorld_/cmake-build-debug/CMakeFiles/rebuild_cache.dir

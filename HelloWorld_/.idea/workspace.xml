@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated />
+    <generated>
+      <config projectName="untitled" targetName="untitled" />
+    </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -9,6 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="44f55431-643e-408e-a719-77b2a9949772" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
@@ -45,6 +48,9 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+=======
+    <list default="true" id="cb306c1f-5e05-419b-9540-568cd96197a3" name="Default Changelist" comment="" />
+>>>>>>> master
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +60,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+<<<<<<< HEAD
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
@@ -99,8 +106,15 @@
     <option name="y" value="130" />
     <option name="width" value="1440" />
     <option name="height" value="780" />
+=======
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+>>>>>>> master
   </component>
+  <component name="ProjectId" id="1ReixL1949a0fMUsAsdBmxxfAKf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+<<<<<<< HEAD
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -120,12 +134,19 @@
       </pane>
     </panes>
   </component>
+=======
+>>>>>>> master
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+>>>>>>> master
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -139,15 +160,23 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="untitled" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="untitled" TARGET_NAME="untitled" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="untitled" RUN_TARGET_NAME="untitled">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="44f55431-643e-408e-a719-77b2a9949772" name="Default Changelist" comment="" />
-      <created>1570008470340</created>
+      <changelist id="cb306c1f-5e05-419b-9540-568cd96197a3" name="Default Changelist" comment="" />
+      <created>1570034207287</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1570008470340</updated>
       <workItem from="1570008473496" duration="8000" />
       <workItem from="1570532712219" duration="4902000" />
@@ -242,5 +271,30 @@
         </state>
       </provider>
     </entry>
+=======
+      <updated>1570034207287</updated>
+      <workItem from="1570034209372" duration="73000" />
+      <workItem from="1570034519403" duration="3644000" />
+      <workItem from="1570926420194" duration="771000" />
+      <workItem from="1570961066625" duration="193000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+>>>>>>> master
   </component>
 </project>

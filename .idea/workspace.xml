@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+<<<<<<< HEAD
     <generated>
       <config projectName="HelloWorld_" targetName="HelloWorld_" />
     </generated>
+=======
+    <generated />
+>>>>>>> master
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -11,10 +15,14 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="3e86db02-b23d-427e-b5d8-94e979417206" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/CMakeFiles/HelloWorld_.dir/main.cpp.obj" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/HelloWorld_/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorld_/main.cpp" afterDir="false" />
     </list>
+=======
+    <list default="true" id="8776158a-82a5-46f3-8bfb-8f8f41069abf" name="Default Changelist" comment="" />
+>>>>>>> master
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +32,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+<<<<<<< HEAD
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FindInProjectRecents">
     <findStrings>
@@ -55,6 +64,16 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Dan\Documents\ESD\ESD\HelloWorld_\cmake-build-debug" />
     </key>
+=======
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ReifqmjwsDRZwsUeD6XFCupYx3" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+>>>>>>> master
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -68,6 +87,7 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager">
     <configuration name="HelloWorld_" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HelloWorld_" TARGET_NAME="HelloWorld_" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="HelloWorld_" RUN_TARGET_NAME="HelloWorld_">
       <method v="2">
@@ -75,11 +95,14 @@
       </method>
     </configuration>
   </component>
+=======
+>>>>>>> master
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="3e86db02-b23d-427e-b5d8-94e979417206" name="Default Changelist" comment="" />
       <created>1571061774189</created>
       <option name="number" value="Default" />
@@ -88,6 +111,15 @@
       <workItem from="1571061775363" duration="10394000" />
       <workItem from="1571325786401" duration="4421000" />
       <workItem from="1571338425429" duration="3237000" />
+=======
+      <changelist id="8776158a-82a5-46f3-8bfb-8f8f41069abf" name="Default Changelist" comment="" />
+      <created>1570034068334</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570034068334</updated>
+      <workItem from="1570034069668" duration="138000" />
+      <workItem from="1570961160451" duration="95000" />
+>>>>>>> master
     </task>
     <servers />
   </component>
@@ -99,12 +131,19 @@
       <map>
         <entry key="MAIN">
           <value>
+<<<<<<< HEAD
             <State />
+=======
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+>>>>>>> master
           </value>
         </entry>
       </map>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -116,4 +155,6 @@
       </breakpoints>
     </breakpoint-manager>
   </component>
+=======
+>>>>>>> master
 </project>

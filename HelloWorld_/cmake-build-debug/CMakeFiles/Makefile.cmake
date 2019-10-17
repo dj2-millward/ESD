@@ -128,5 +128,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+<<<<<<< HEAD
   "CMakeFiles/HelloWorld_.dir/DependInfo.cmake"
+=======
+  "CMakeFiles/untitled.dir/DependInfo.cmake"
+>>>>>>> master
   )

@@ -110,6 +110,7 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+<<<<<<< HEAD
 # Target rules for targets named HelloWorld_
 
 # Build rule for target.
@@ -121,6 +122,19 @@ HelloWorld_: cmake_check_build_system
 HelloWorld_/fast:
 	$(MAKE) -f CMakeFiles\HelloWorld_.dir\build.make CMakeFiles/HelloWorld_.dir/build
 .PHONY : HelloWorld_/fast
+=======
+# Target rules for targets named untitled
+
+# Build rule for target.
+untitled: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 untitled
+.PHONY : untitled
+
+# fast build rule for target.
+untitled/fast:
+	$(MAKE) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/build
+.PHONY : untitled/fast
+>>>>>>> master
 
 main.obj: main.cpp.obj
 
@@ -128,7 +142,11 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles\HelloWorld_.dir\build.make CMakeFiles/HelloWorld_.dir/main.cpp.obj
+=======
+	$(MAKE) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/main.cpp.obj
+>>>>>>> master
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -137,7 +155,11 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles\HelloWorld_.dir\build.make CMakeFiles/HelloWorld_.dir/main.cpp.i
+=======
+	$(MAKE) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/main.cpp.i
+>>>>>>> master
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -146,7 +168,11 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles\HelloWorld_.dir\build.make CMakeFiles/HelloWorld_.dir/main.cpp.s
+=======
+	$(MAKE) -f CMakeFiles\untitled.dir\build.make CMakeFiles/untitled.dir/main.cpp.s
+>>>>>>> master
 .PHONY : main.cpp.s
 
 # Help Target
@@ -155,8 +181,13 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
+<<<<<<< HEAD
 	@echo ... HelloWorld_
 	@echo ... edit_cache
+=======
+	@echo ... edit_cache
+	@echo ... untitled
+>>>>>>> master
 	@echo ... rebuild_cache
 	@echo ... main.obj
 	@echo ... main.i

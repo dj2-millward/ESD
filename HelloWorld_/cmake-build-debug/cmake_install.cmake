@@ -2,7 +2,11 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
+<<<<<<< HEAD
   set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/HelloWorld_")
+=======
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/untitled")
+>>>>>>> master
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
