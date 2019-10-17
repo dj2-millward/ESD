@@ -217,7 +217,7 @@ int main() {
 
 
                     if (user_score > comp_score) {
-                        std::cout << "You Win, GG" << std::endl;
+                        std::cout << "You Win, GG " << std::endl;
                         std::cout << "_______________________________" << std::endl;
 
 

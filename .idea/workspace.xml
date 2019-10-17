@@ -12,20 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e86db02-b23d-427e-b5d8-94e979417206" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/HelloWorld_/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorld_/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/CMakeFiles/3.14.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/CMakeFiles/3.14.3/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/CMakeFiles/3.14.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/CMakeFiles/3.14.3/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/CMakeFiles/3.14.3/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/CMakeFiles/3.14.3/CompilerIdC/a.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/CMakeFiles/3.14.3/CompilerIdCXX/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/CMakeFiles/3.14.3/CompilerIdCXX/a.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/CMakeFiles/HelloWorld_.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/CMakeFiles/HelloWorld_.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/CMakeFiles/HelloWorld_.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/CMakeFiles/HelloWorld_.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/CMakeFiles/HelloWorld_.dir/main.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/CMakeFiles/HelloWorld_.dir/objects.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HelloWorld_/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorld_/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/" />
@@ -44,12 +31,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HelloWorld_/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="183" column="24" selection-start-line="183" selection-start-column="24" selection-end-line="183" selection-end-column="24" />
+            <state relative-caret-position="-1706">
+              <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#79#1707#0" />
                 <element signature="e#1709#2389#0" />
-                <element signature="e#2420#3399#1" />
+                <element signature="e#2369#3563#0" />
               </folding>
             </state>
           </provider>
@@ -163,12 +151,12 @@
       <option name="presentableId" value="Default" />
       <updated>1571061774189</updated>
       <workItem from="1571061775363" duration="10394000" />
-      <workItem from="1571325786401" duration="3556000" />
+      <workItem from="1571325786401" duration="4421000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13950000" />
+    <option name="totallyTimeSpent" value="14815000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -178,7 +166,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5048754" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33044422" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -206,12 +194,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HelloWorld_/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="183" column="24" selection-start-line="183" selection-start-column="24" selection-end-line="183" selection-end-column="24" />
+        <state relative-caret-position="-1706">
+          <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#79#1707#0" />
             <element signature="e#1709#2389#0" />
-            <element signature="e#2420#3399#1" />
+            <element signature="e#2369#3563#0" />
           </folding>
         </state>
       </provider>
