@@ -16,11 +16,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3e86db02-b23d-427e-b5d8-94e979417206" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld_/RPS.txt" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/RPS.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/CMakeFiles/HelloWorld_.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/CMakeFiles/HelloWorld_.dir/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/CMakeFiles/HelloWorld_.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/CMakeFiles/HelloWorld_.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/HelloWorld_.exe" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorld_/cmake-build-debug/HelloWorld_.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HelloWorld_/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/HelloWorld_/main.cpp" afterDir="false" />
     </list>
@@ -40,13 +37,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HelloWorld_/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="646">
+              <caret line="53" column="47" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
               <folding>
-                <element signature="e#79#1859#0" />
-                <element signature="e#1885#2508#0" />
-                <element signature="e#2579#3485#0" />
-                <element signature="e#3516#7755#0" />
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -95,7 +89,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
+    <option name="x" value="-564" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -170,21 +164,25 @@
       <workItem from="1571061775363" duration="10394000" />
       <workItem from="1571325786401" duration="4421000" />
       <workItem from="1571651891993" duration="2159000" />
+      <workItem from="1571655170237" duration="656000" />
+      <workItem from="1571751023464" duration="2006000" />
+      <workItem from="1571753607519" duration="731000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16974000" />
+    <option name="totallyTimeSpent" value="20367000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18176973" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18763326" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33044422" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.07367281" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -192,7 +190,7 @@
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32936078" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.33044422" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="CMake" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -204,6 +202,27 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/HelloWorld_/main.cpp</url>
+          <line>143</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/HelloWorld_/main.cpp</url>
+          <line>115</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/HelloWorld_/main.cpp</url>
+          <line>114</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../_broken/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
@@ -212,13 +231,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HelloWorld_/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="646">
+          <caret line="53" column="47" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
           <folding>
-            <element signature="e#79#1859#0" />
-            <element signature="e#1885#2508#0" />
-            <element signature="e#2579#3485#0" />
-            <element signature="e#3516#7755#0" />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>

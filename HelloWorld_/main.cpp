@@ -46,7 +46,7 @@ void guessing_game()
         }
 
         std::string yes = "1 - Yes\n";
-        std::string no = "2 - No, Exit game.\n";
+        std::string no = "2 - No, Return to menu.\n";
 
         int play_again_choice;
 
@@ -66,14 +66,16 @@ void guessing_game()
                 guessing_game();
                 break;
             case 2 :
-                std::cout << "Thank you for playing" << std::endl;
-
+                std::cout << "Back To Menu" << std::endl;
                 break;
             default:
                 std::cout << "Invalid Input, try again" << std::endl;
                 break;
         }
+
     }
+
+
 }
 
 char user_input()
@@ -141,46 +143,50 @@ int scoring(char com_guess, char user_guess)
 int main()
 {
     //MAIN MENU
+    bool main_menu = true;
     bool rps_is_running = false;
     bool rps_playagain = false;
 
-    std::string menu_reply;
-    std::string reply;
-    std::string playagain_input;
-
-    std::string gg = "1 - Guessing Game\n";
-    std::string rps = "2 - Rock Paper Scissors\n";
-    std::string exit = "3 - Exit\n";
-
-    int menu_choice;
-    std::cout
-            << "Hello, welcome to console games. Please enter the number for the game you would like to play."
-            << std::endl;
-
-    std::cout << gg;
-    std::cout << rps;
-    std::cout << exit;
-
-    std::cin >> menu_choice;
-
-    switch (menu_choice)
+    while (main_menu)
     {
-        case 1 :
-            guessing_game();
-            break;
 
-        case 2 :
-            rps_is_running = true;
-            rps_playagain = true;
-            break;
+        std::string menu_reply;
+        std::string reply;
+        std::string playagain_input;
 
-        case 3 :
-            std::cout << "Thank you for playing";
-            return 0;
+        std::string gg = "1 - Guessing Game\n";
+        std::string rps = "2 - Rock Paper Scissors\n";
+        std::string exit = "3 - Exit\n";
 
-        default:
-            std::cout << "Invalid Input" << std::endl;
-    }
+        int menu_choice;
+        std::cout
+                << "Hello, welcome to console games. Please enter the number for the game you would like to play."
+                << std::endl;
+
+        std::cout << gg;
+        std::cout << rps;
+        std::cout << exit;
+
+        std::cin >> menu_choice;
+
+        switch (menu_choice) {
+            case 1 :
+                guessing_game();
+                break;
+
+            case 2 :
+                rps_is_running = true;
+                rps_playagain = true;
+                break;
+
+            case 3 :
+                std::cout << "";
+                return 0;
+
+            default:
+                std::cout << "Invalid Input" << std::endl;
+        }
+
 
 
     std::ifstream inFile("RPS.txt"); // opens file
@@ -193,9 +199,7 @@ int main()
         std::cout << "Error reading file" << std::endl;
     }
 
-
     char com_guess;
-
     int comp_score = 0;
     int user_score = 0;
 
@@ -261,7 +265,7 @@ int main()
             //Play Again Menu
             int play_again_choice;
             std::string yes = "1 - Yes\n";
-            std::string no = "2 - No, Exit game.\n";
+            std::string no = "2 - No, Back to menu.\n";
 
             std::cout
                     << "Would you like to play again?"
@@ -281,9 +285,8 @@ int main()
                     rps_is_running = true;
                     break;
                 case 2 :
-                    std::cout << "Thank you for playing" << std::endl;
-                    rps_is_running = false;
-                    rps_playagain = false;
+                    std::cout << "" << std::endl;
+                    main_menu = true;
                     break;
                 default:
                     std::cout << "Invalid Input, try again" << std::endl;
@@ -291,5 +294,5 @@ int main()
             }
         }
     }
-    return 0;
-}
+
+}}
